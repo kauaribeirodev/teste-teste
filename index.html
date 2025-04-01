@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page com Imagens</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            height: 100%;
+            background-color: #f4f4f4;
+        }
+
+        /* Estilo de cada seção */
+        .section {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+
+        /* Seções com imagens de fundo para desktops */
+        .section-1 {
+            background-image: url('1.jpg'); /* Coloque o caminho da sua imagem para desktop */
+        }
+
+        .section-2 {
+            background-image: url('2.jpg'); /* Coloque o caminho da sua imagem para desktop */
+        }
+
+        .section-3 {
+            background-image: url('3.jpg'); /* Coloque o caminho da sua imagem para desktop */
+        }
+
+        .section-4 {
+            background-image: url('4.jpg'); /* Coloque o caminho da sua imagem para desktop */
+        }
+
+        h1 {
+            font-size: 40px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        p {
+            font-size: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Mídia Query para dispositivos móveis */
+        @media (max-width: 768px) {
+            /* Estilo para as imagens no mobile */
+            .section {
+                flex-direction: column; /* Empilha as seções no mobile */
+                height: 100vh; /* Mantém a altura de 100vh para ocupar toda a tela */
+                background-size: contain; /* Ajusta a imagem para caber sem cortar */
+                background-repeat: no-repeat;
+                background-position: center top; /* Alinha a imagem no topo da tela */
+            }
+
+            .section-1 {
+                background-image: url('./img/Sindijus Luta_LP_v2_page-0001.jpg'); /* Imagem específica para celular */
+            }
+
+            .section-2 {
+                background-image: url('./img/Sindijus\ Luta_LP_v2_page-0002.jpg'); /* Imagem específica para celular */
+            }
+
+            .section-3 {
+                background-image: url('./img/Sindijus\ Luta_LP_v2_page-0003.jpg'); /* Imagem específica para celular */
+            }
+
+            .section-4 {
+                background-image: url('./img/Sindijus\ Luta_LP_v2_page-0004.jpg'); /* Imagem específica para celular */
+            }
+
+            h1 {
+                font-size: 30px; /* Ajuste o tamanho da fonte para telas menores */
+            }
+
+            p {
+                font-size: 16px; /* Ajuste o tamanho do parágrafo para telas menores */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="section section-1">
+        <div>
+            <h1>Bem-vindo à nossa Landing Page!</h1>
+            <p>Explore nossas incríveis imagens!</p>
+        </div>
+    </div>
+
+    <div class="section section-2">
+        <div>
+            <h1>Seção 2</h1>
+            <p>Mais conteúdo interessante aqui.</p>
+        </div>
+    </div>
+
+    <div class="section section-3">
+        <div>
+            <h1>Seção 3</h1>
+            <p>Imagens e informações sobre nossos produtos.</p>
+        </div>
+    </div>
+
+    <div class="section section-4">
+        <div>
+            <h1>Seção 4</h1>
+            <p>Entre em contato ou saiba mais sobre nossa empresa.</p>
+        </div>
+    </div>
+
+</body>
+</html>
